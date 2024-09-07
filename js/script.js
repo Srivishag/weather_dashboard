@@ -13,7 +13,7 @@ function initPage() {
     var todayweatherEl = document.getElementById("today-weather");
     let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 
-    const APIKey = "84b79da5e5d7c92085660485702f4ce8";
+    const APIKey = "YOUR_API_KEY";
 
     function getWeather(cityName) {
         let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
